@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Blue gradient */
+  color: #fff;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#display {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: hsl(276, 100%, 65%);
+  text-shadow: 0 0 10px #00f2fe, 0 0 30px #00f2fe;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  background: #023e8a;
+  transform: scale(1.1);
+}
+
+.buttons button:hover {
+  background: #023e8a;
+}
+
+#laps {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+#laps li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+.circle-timer {
+  position: relative;
+  width: 220px;
+  height: 180px;
+  margin: 30px auto;
+}
+
+#display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00f2fe;
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 4s linear;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
